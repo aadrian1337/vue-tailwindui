@@ -1,13 +1,13 @@
 <template>
   <div class="relative bg-white">
-    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+    <div class="max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8 mx-auto">
       <div
-        class="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6"
+        class="sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6 px-6 pt-10 pb-24"
       >
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <div class="hidden sm:mt-32 sm:flex lg:mt-16">
+        <div class="lg:mx-0 max-w-2xl mx-auto">
+          <div class="sm:flex hidden">
             <div
-              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              class="ring-1 ring-gray-900/10 hover:ring-gray-900/20 relative px-3 py-1 text-sm leading-6 text-gray-500 rounded-full"
             >
               Lorem ipsum dolor sit amet id auctor dui.
               <a
@@ -19,7 +19,7 @@
             </div>
           </div>
           <h1
-            class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl"
+            class="sm:mt-10 sm:text-6xl mt-24 text-4xl font-bold tracking-tight text-gray-900"
           >
             Data to enrich your online business
           </h1>
@@ -28,7 +28,7 @@
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
           </p>
-          <div class="mt-10 flex items-center gap-x-6">
+          <div class="gap-x-6 flex items-center mt-10">
             <a
               href="#"
               class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -44,7 +44,7 @@
         </div>
       </div>
       <div
-        class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0"
+        class="lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 relative"
       >
         <img
           class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"

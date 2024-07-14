@@ -1,6 +1,4 @@
 <template>
-  <button @click="toggleModal">Open Modal</button>
-
   <TransitionRoot as="template" :show="open">
     <Dialog class="relative z-10" @close="open = false">
       <TransitionChild
@@ -13,13 +11,13 @@
         leave-to="opacity-0"
       >
         <div
-          class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+          class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75"
         />
       </TransitionChild>
 
       <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="sm:p-0 flex items-center items-end justify-center min-h-full p-4 text-center"
         >
           <TransitionChild
             as="template"
@@ -31,18 +29,18 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6"
+              class="sm:my-8 sm:max-w-sm sm:p-6 relative w-full px-4 pt-5 pb-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl"
             >
               <div>
                 <div
-                  class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100"
+                  class="flex items-center justify-center w-12 h-12 mx-auto bg-green-100 rounded-full"
                 >
                   <CheckIcon
-                    class="h-6 w-6 text-green-600"
+                    class="w-6 h-6 text-green-600"
                     aria-hidden="true"
                   />
                 </div>
-                <div class="mt-3 text-center sm:mt-5">
+                <div class="sm:mt-5 mt-3 text-center">
                   <DialogTitle
                     as="h3"
                     class="text-base font-semibold leading-6 text-gray-900"
@@ -55,10 +53,10 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-5 sm:mt-6">
+              <div class="sm:mt-6 flex flex-col items-center mt-5">
                 <button
                   type="button"
-                  class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  class="hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 inline-flex justify-center px-3 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm"
                   @click="open = false"
                 >
                   Close
